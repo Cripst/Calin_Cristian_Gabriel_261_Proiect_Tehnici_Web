@@ -1,0 +1,44 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Style the iframe container */
+.menu-iframe {
+    border: none;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f1f1f1;
+}
+
+/* Style the menu items */
+.menu-iframe ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu-iframe li {
+    margin-bottom: 10px;
+}
+
+.menu-iframe a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Add hover effect */
+.menu-iframe a:hover {
+    color: #555;
+}

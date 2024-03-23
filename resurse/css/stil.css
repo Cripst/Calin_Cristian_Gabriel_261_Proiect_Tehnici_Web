@@ -1,0 +1,24 @@
+body{
+    --color1:#FCE8D7;
+    --color2:#FFCB7D;
+    --color3:#FFA27D;
+    --color4:#FF8A7D;
+    --color5:#FFB77D;
+    
+    --spatiere:200px;
+    padding-left:var(--spatiere);
+    padding-right:var(--spatiere);
+};
+
+
+
+p{
+    color:var(--color4);
+}
+
+h2{
+    background-color: var(--color1);
+}
+p{
+    border: 2px solid var(--color1);
+}

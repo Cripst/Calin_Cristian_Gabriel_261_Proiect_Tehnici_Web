@@ -1,0 +1,99 @@
+#grid-pagina{
+    display: grid;
+    gap: 10px;
+     /* grid-template-columns: 1fr 1fr 1fr/*repeat(4,1fr)*/
+    grid-template-areas: "welcome welcome welcome welcome"
+                         "welcome welcome welcome welcome"
+                         "orar orar extra extra"
+                         "orar orar extra extra"                    
+                         "utilizatori statistici extra extra"
+                         "utilizatori statistici extra extra"
+                         "anunturi  evenimente evenimente dateserver"; 
+}
+/* #grid-pagina > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    
+  } */
+
+#grid-pagina>*{
+    outline: 2px solid skyblue;
+    padding: 1em;
+}
+
+#grid-pagina>figure{
+    margin: 0;
+}
+#video{
+    grid-area: video;
+}
+
+#welcome{
+    grid-area: welcome;
+}
+#promotii{
+    grid-area: extra;
+}
+#anunturi{
+    grid-area: anunturi;
+}
+#orar{
+    grid-area: orar;
+}
+ 
+#fig1{
+    grid-area: fig1;
+}
+#fig2{
+    grid-area: fig2;
+}
+#fig3{
+    grid-area: fig3;
+}
+#produse{
+    grid-area: produse;
+}
+#index-intrebari{
+    grid-area: index-intrebari;
+}
+
+
+.intro-oferte{
+    font-size: 1.5rem;
+}
+.farfurie{
+    width: 50%;
+}
+
+@media screen and (max-width:1200px){
+
+    html{
+        font-size: 15px;
+        background-color: red;
+    }
+
+    #grid-pagina{
+        grid-template-columns: repeat(2,1fr);   
+        grid-template-areas: "welcome  welcome"
+                             "promotii promotii"
+                             "orar orar"
+                             "fig1 produse "
+                             "fig2 produse "
+                             "fig3 produse "
+                             "index-intrebari index-intrebari "
+                             "anunturi anunturi ";
+    }
+}
+
+@media screen and (max-width:800px){
+
+    html{
+        font-size: 12px;
+    }
+
+    #grid-pagina{
+        display: block;
+    }
+}
